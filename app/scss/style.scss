@@ -1,8 +1,159 @@
-html {
-   box-sizing: border-box;
+@import "vars";
+@import "global";
+
+/*Header*/
+.header__top {
+   background-color: $light-grey;
 }
-*,
-*::before,
-*::after {
-   box-sizing: inherit;
+.header__top-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+}
+.header__logo {
+   margin-left: 10px;
+}
+.header__box {
+   display: flex;
+   align-items: center;
+   &-btn {
+      background-color: $blue;
+      padding: 11px 18px;
+      border-radius: 20px;
+      margin-right: 50px;
+      font-size: 14px;
+      border: 1px solid $blue;
+      a {
+         color: #fff;
+      }
+      &:hover {
+         background-color: #fff;
+         transition: all 0.3s;
+         a {
+            color: $blue;
+         }
+      }
+   }
+   &-icons {
+      display: flex;
+      align-items: center;
+      margin-right: 48px;
+   }
+   &-user {
+      display: flex;
+      align-items: center;
+   }
+}
+.box__icon-1,
+.box__icon-2,
+.box__icon-3 {
+   margin-right: 30px;
+   position: relative;
+}
+.icon__circle-1,
+.icon__circle-2,
+.icon__circle-3 {
+   position: absolute;
+   min-width: 28px;
+   min-height: 22px;
+   padding: 6px;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 500;
+   text-align: center;
+}
+.icon__circle-1 {
+   background-color: $red;
+   top: -22px;
+   right: -16px;
+}
+.icon__circle-2 {
+   background-color: $green;
+   top: -22px;
+   right: -16px;
+}
+.icon__circle-3 {
+   background-color: $blue;
+   top: -20px;
+   right: -22px;
+}
+.header__user-icon {
+   margin-right: 20px;
+   width: 50px;
+   height: 50px;
+   display: block;
+   border-radius: 50%;
+}
+.header__user-info {
+   a {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500;
+      color: #333333;
+      &:hover {
+         color: #000;
+         transition: all 0.3s;
+      }
+   }
+   span {
+      display: block;
+      font-size: 15px;
+      line-height: 22px;
+      color: $blue;
+   }
+}
+.header__menu {
+   background-color: #ccc;
+}
+.header__menu-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 80px;
+}
+.menu__list {
+   &-item {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 500;
+      a {
+         color: #333333;
+         &:hover {
+            color: #000;
+            transition: all 0.3s;
+         }
+      }
+   }
+   li + li {
+      margin-left: 32px;
+   }
+}
+.header__search {
+   &-form {
+      position: relative;
+      max-width: 360px;
+      input {
+         height: 46px;
+         padding: 0 85px 0 25px;
+         border-radius: 25px;
+         border: none;
+         outline: transparent;
+         width: 360px;
+      }
+      button {
+         background-color: $blue;
+         border: none;
+         cursor: pointer;
+         top: 0;
+         right: 0;
+         position: absolute;
+         height: 100%;
+         width: 70px;
+         border-radius: 25px;
+         outline: transparent;
+      }
+   }
 }
