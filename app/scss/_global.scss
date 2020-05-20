@@ -16,6 +16,13 @@ li {
    padding: 0;
    list-style: none;
 }
+input {
+   color: #333333;
+   outline: transparent;
+}
+select {
+   outline: transparent;
+}
 body {
    font-family: 'Quicksand', sans-serif;
    font-weight: 400;
