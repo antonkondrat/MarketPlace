@@ -28,4 +28,6 @@ $(function () {
    $(".release__titlebox-filter").click(function () {
       $(".filter__dropdown").fadeToggle({});
    });
+
+   var mixer = mixitup('.release__inner-items');
 });

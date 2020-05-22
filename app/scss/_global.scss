@@ -46,24 +46,21 @@ body {
    display: flex;
    justify-content: space-between;
 }
-.box-info__buttons {
-   display: flex;
-   .info__buttons-item {
-      background-color: #f1f3f6;
-      padding: 9px 13px;
-      margin-right: 10px;
-      border-radius: 25px;
-      font-size: 15px;
-      a {
-         color: #868c96;
-      }
-      &:hover {
-         background-color: $blue;
-         transition: all 0.3s;
-         a {
-            color: #fff;
-            transition: all 0.3s;
-         }
-      }
-   }
+.color-gold {
+   color: #feb71d;
+}
+.color-light_blue {
+   color: #58c9e9;
+}
+.color-green {
+   color: #77de51;
+}
+.color-red {
+   color: #ff6a6d;
+}
+.color-blue {
+   color: $blue;
+}
+.color-purple {
+   color: $purple;
 }
