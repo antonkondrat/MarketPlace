@@ -290,11 +290,13 @@
       color: #fff;
       border: none;
       border-radius: 4px;
-      padding: 0 66px;
+      padding: 0 15px;
       font-size: 16px;
       height: 55px;
       cursor: pointer;
       margin-left: 30px;
+      text-align: center;
+      width: 223px;
    }
 }
 .product-select {
@@ -623,6 +625,12 @@
    &-text {
       padding: 30px 40px 35px 28px;
    }
+   &:hover {
+      .release__product-button {
+         opacity: 1;
+         transition: all .5s;
+      }
+   }
 }
 .release__text-title {
    font-size: 20px;
@@ -631,10 +639,12 @@
    margin-bottom: 20px;
 }
 .release__product-button {
+   opacity: 0;
    cursor: pointer;
    color: #fff;
-   background-color: rgba(255, 255, 255, 0.1);
-   background-color: rgba(0, 0, 0, 0.3);
+   // background-color: rgba(255, 255, 255, 0.1);
+   // background-color: rgba(0, 0, 0, 0.3);
+   background-color: transparent;
    border: 1px solid #fff;
    border-radius: 25px;
    font-size: 15px;
