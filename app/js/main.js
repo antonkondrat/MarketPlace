@@ -2,6 +2,9 @@ $(function () {
    $(".featured__slider-inner").slick({
       nextArrow: '<i class="fas fa-chevron-right"></i>',
       prevArrow: '<i class="fas fa-chevron-left"></i>',
+      autoplay: {
+		 	delay: 3000,
+		},
    });
 
    $(".followers__slider-inner").slick({
@@ -9,6 +12,9 @@ $(function () {
       prevArrow: '<i class="fas fa-chevron-left"></i>',
       slidesToShow: 3,
       slidesToScroll: 1,
+      autoplay: {
+         delay: 3000,
+     },
    });
 
    $(".rateyo-release").rateYo({
