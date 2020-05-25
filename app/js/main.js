@@ -3,10 +3,9 @@ $(function () {
       nextArrow: '<i class="fas fa-chevron-right"></i>',
       prevArrow: '<i class="fas fa-chevron-left"></i>',
       autoplay: {
-		 	delay: 3000,
-		},
+         delay: 3000,
+      },
    });
-
    $(".followers__slider-inner").slick({
       nextArrow: '<i class="fas fa-chevron-right"></i>',
       prevArrow: '<i class="fas fa-chevron-left"></i>',
@@ -14,7 +13,20 @@ $(function () {
       slidesToScroll: 1,
       autoplay: {
          delay: 3000,
-     },
+      },
+   });
+   var mySwiper = new Swiper(".feedback__container-swiper", {
+      containerModifierClass: "feedback__container-swiper",
+      slideClass: "feedback__item",
+      wrapperClass: "feedback__inner-items",
+      loop: true,
+      slidesPerView: 2,
+      slidesToScroll: 2,
+      spaceBetween: 30,
+      navigation: {
+         nextEl: ".feedback__button-next",
+         prevEl: ".feedback__button-prev",
+      },
    });
 
    $(".rateyo-release").rateYo({
@@ -35,5 +47,5 @@ $(function () {
       $(".filter__dropdown").fadeToggle({});
    });
 
-   var mixer = mixitup('.release__inner-items');
+   var mixer = mixitup(".release__inner-items");
 });
