@@ -1,4 +1,12 @@
 $(function () {
+   
+   try {
+      var mixer = mixitup(".release__inner-items");
+   }
+   catch(error) {
+      console.log('Ошибка');
+   };
+
    $(".featured__slider-inner").slick({
       nextArrow: '<i class="fas fa-chevron-right"></i>',
       prevArrow: '<i class="fas fa-chevron-left"></i>',
@@ -47,5 +55,4 @@ $(function () {
       $(".filter__dropdown").fadeToggle({});
    });
 
-   var mixer = mixitup(".release__inner-items");
 });

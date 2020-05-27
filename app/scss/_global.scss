@@ -78,3 +78,20 @@ body {
 .color-purple {
    color: $purple;
 }
+.btn-white {
+   display: block;
+   color: $blue;
+   background-color: #fff;
+   font-size: 16px;
+   padding: 20px 30px;
+   max-width: 190px;
+   border-radius: 25px;
+   margin: 50px auto 0 auto;
+   border: 1px solid #fff;
+   &:hover {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      transition: all .3s;
+   }
+}
