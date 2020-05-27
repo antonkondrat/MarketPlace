@@ -185,11 +185,11 @@
       color: #fff;
    }
 }
-
+ 
 /*Header-product*/
 .header__product {
    min-height: 730px;
-   background-color: #2b4fd5;
+   background-image: linear-gradient( 180deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);
    position: relative;
 }
 .header__product {
@@ -1126,8 +1126,8 @@
 
 /*Join*/
 .join {
-   background-color: $blue;
    padding: 100px 0 110px;
+   background-image: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
 }
 .join__inner {
    text-align: center;
