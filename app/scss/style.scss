@@ -79,7 +79,7 @@
       margin-right: 5px;
       &:hover {
          color: $blue;
-         transition: all .3s;
+         transition: all 0.3s;
       }
    }
    .header__box-register {
@@ -93,7 +93,7 @@
       max-width: 100px;
       &:hover {
          color: $blue;
-         transition: all .3s;
+         transition: all 0.3s;
       }
    }
 }
@@ -476,6 +476,9 @@
    height: 50px;
    display: block;
    border-radius: 50%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .header__user-info {
    a {
@@ -613,6 +616,7 @@
    overflow: hidden;
    visibility: hidden;
    transition: max-height 0.4s linear;
+   display: none;
    &-box {
       display: flex;
    }
@@ -1702,7 +1706,7 @@
          border: none;
          border-radius: 25px;
          padding: 20px 120px 20px 30px;
-         max-width: 358px;
+         width: 100%;
       }
       button {
          position: absolute;
@@ -1803,4 +1807,5 @@
 /*888888888888888888888888888888888888888888888888888888888888*/
 /*888888888888888888888888888888888888888888888888888888888888*/
 /*888888888888888888888888888888888888888888888888888888888888*/
-/*Megamenu*/
+/*Media*/
+@import "media";
