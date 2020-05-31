@@ -372,12 +372,16 @@
 /*Menu*/
 /*Menu*/
 /*Menu*/
+
 @media (max-width: 920px) {
    .menu__list li + li {
       margin-left: 15px;
    }
    .header__search-form {
       max-width: 300px;
+   }
+   .menu__bigdropdown {
+      left: -800%;
    }
 }
 @media (max-width: 800px) {

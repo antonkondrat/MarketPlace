@@ -616,7 +616,7 @@
    overflow: hidden;
    visibility: hidden;
    transition: max-height 0.4s linear;
-   display: none;
+   // display: none;
    &-box {
       display: flex;
    }
@@ -657,7 +657,7 @@
    .menu__dropdown,
    .menu__bigdropdown {
       visibility: visible;
-      max-height: 650px;
+      max-height: 100vh;
    }
 }
 /*Header-product*/
