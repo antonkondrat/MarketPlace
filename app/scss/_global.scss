@@ -44,21 +44,21 @@ select {
    outline: transparent;
 }
 body {
-   font-family: 'Quicksand', sans-serif;
+   font-family: "Quicksand", sans-serif;
    font-weight: 400;
    font-size: 16px;
    height: 100%;
 }
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
 }
 .content {
    flex: 1 0 auto;
 }
 .footer {
-	flex: 0 0 auto;
+   flex: 0 0 auto;
 }
 .container {
    max-width: 1170px;
@@ -85,7 +85,7 @@ body {
    color: #77de51;
 }
 .color-red {
-   color: #ff6a6d !important; 
+   color: #ff6a6d !important;
 }
 .color-blue {
    color: $blue;
@@ -113,22 +113,6 @@ body {
       background-color: transparent;
       border: 1px solid #fff;
       color: #fff;
-      transition: all .3s;
-   }
-}
-.header__box-user {
-   &.hidden {
-      display: none;
-   }
-   &.visible {
-      display: block;
-   }
-}
-.header__box-loginreg {
-   &.hidden {
-      display: none;
-   }
-   &.visible {
-      display: block;
+      transition: all 0.3s;
    }
 }

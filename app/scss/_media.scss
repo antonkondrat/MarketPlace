@@ -282,7 +282,7 @@
    .menu__alarm-item .alarm-item__box span {
       font-size: 12px;
       line-height: 20px;
-  }
+   }
 }
 @media (max-width: 550px) {
    .footer__top {
@@ -307,11 +307,6 @@
    }
    .header__menu-user--inner::before {
       bottom: 10px;
-   }
-   .header__menu-cart,
-   .header__menu-message,
-   .header__menu-alarm {
-      display: none !important;
    }
 }
 @media (max-width: 380px) {
@@ -374,3 +369,54 @@
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
+/*Menu*/
+/*Menu*/
+/*Menu*/
+@media (max-width: 920px) {
+   .menu__list li + li {
+      margin-left: 15px;
+   }
+   .header__search-form {
+      max-width: 300px;
+   }
+}
+@media (max-width: 800px) {
+   .header__menu {
+      display: none;
+   }
+   .header__search-form {
+      max-width: 500px;
+      width: 500px;
+   }
+   .header__search {
+      margin-left: auto;
+   }
+   .hamburger-menu {
+      display: block;
+   }
+}
+@media (max-width:650px) {
+   .header__search-form {
+      max-width: 300px;
+      width: 300px;
+   }
+}
+@media (max-width:500px) {
+   .menu__box {
+      width: 100%;
+   }
+}
+@media (max-width:480px) {
+   .menu__btn {
+      top: 98px;
+   }
+   .header__search-form {
+      max-width: 250px;
+      width: 250px;
+   }
+   .header__search-form input {
+      &::placeholder {
+         font-size: 13px;
+      }
+   }
+}

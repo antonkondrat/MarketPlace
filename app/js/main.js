@@ -56,7 +56,7 @@ $(function () {
    //Filter//
    //Dropdown//
    var menuBtn1 = $(".box__icon-1"),
-         menu1 = $(".header__menu-alarm");
+      menu1 = $(".header__menu-alarm");
    menuBtn1.on("click", function () {
       if ($(this).hasClass("visible")) {
          $(this).removeClass("visible");
@@ -79,7 +79,7 @@ $(function () {
    });
 
    var menuBtn2 = $(".box__icon-2"),
-         menu2 = $(".header__menu-message");
+      menu2 = $(".header__menu-message");
    menuBtn2.on("click", function () {
       if ($(this).hasClass("visible")) {
          $(this).removeClass("visible");
@@ -102,7 +102,7 @@ $(function () {
    });
 
    var menuBtn3 = $(".box__icon-3"),
-         menu3 = $(".header__menu-cart");
+      menu3 = $(".header__menu-cart");
    menuBtn3.on("click", function () {
       if ($(this).hasClass("visible")) {
          $(this).removeClass("visible");
@@ -124,4 +124,23 @@ $(function () {
       }
    });
    //Dropdown//
+   
+   //Hamburger
+   $(".menu__item").on("click", function () {
+      $(this).children(".menu__submenu-list").toggleClass("active");
+   });
+   
+   $(".menu__item.menu__item--bigmenu").on("click", function () {
+      $(".menu__box").toggleClass("large");
+   });
+   $(document).click(function (e) {
+      if (
+         !$(".menu__item.menu__item--bigmenu").is(e.target) &&
+         !$(".menu__item.menu__item--bigmenu").has(e.target).length === 0
+      ) {
+         $(".menu__box").removeClass("large");
+         $(".menu__submenu-list--bigmenu").removeClass("active");
+      }
+   });
+   //Hamburger
 });
