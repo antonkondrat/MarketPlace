@@ -124,12 +124,16 @@ $(function () {
       }
    });
    //Dropdown//
-   
+
    //Hamburger
-   $(".menu__item").on("click", function () {
-      $(this).children(".menu__submenu-list").toggleClass("active");
+   $(".menu__item").on("click", function (e) {
+      if ($(".menu__submenu-item").children().is(e.target)) {
+      } else {
+         $(this).children(".menu__submenu-list").toggleClass("active");
+         console.log("Нажал на кнопку");
+      }
    });
-   
+
    $(".menu__item.menu__item--bigmenu").on("click", function () {
       $(".menu__box").toggleClass("large");
    });
@@ -142,5 +146,34 @@ $(function () {
          $(".menu__submenu-list--bigmenu").removeClass("active");
       }
    });
+
+   $(document).click(function (e) {
+      if (!$(".hamburger-menu").children(e.target)) {
+         $(".menu__box").slideUp();
+      }
+   });
    //Hamburger
+
+   //RangeSlider
+   $(".aside__pricing-rangeSlider").ionRangeSlider({
+      type: "double",
+      max: 330,
+      from: 30,
+      to: 300,
+      prefix: "$",
+   });
+   //RangeSlider
+
+   //Grid-List buttons
+   $(".filters__button-grid").on("click", function () {
+      $(".release__item").removeClass("list");
+      $(".filters__button-grid").addClass("filter--active");
+      $(".filters__button-list").removeClass("filter--active");
+   });
+   $(".filters__button-list").on("click", function () {
+      $(".release__item").addClass("list");
+      $(".filters__button-grid").removeClass("filter--active");
+      $(".filters__button-list").addClass("filter--active");
+   });
+   //Grid-List buttons
 });
