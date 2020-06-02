@@ -77,28 +77,28 @@ body {
    justify-content: space-between;
 }
 .color-gold {
-   color: #feb71d;
+   color: #feb71d !important;;
 }
 .color-light_blue {
-   color: #58c9e9;
+   color: #58c9e9 !important;
 }
 .color-green {
-   color: #77de51;
+   color: #77de51 !important;
 }
 .color-red {
    color: #ff6a6d !important;
 }
 .color-blue {
-   color: $blue;
+   color: $blue !important;
 }
 .color-purple {
-   color: $purple;
+   color: $purple !important;
 }
 .bgcolor-blue {
-   background-color: $blue;
+   background-color: $blue !important;;
 }
 .bgcolor-purple {
-   background-color: $purple;
+   background-color: $purple !important;
 }
 .btn-white {
    display: block;

@@ -176,4 +176,5 @@ $(function () {
       $(".filters__button-list").addClass("filter--active");
    });
    //Grid-List buttons
+
 });
