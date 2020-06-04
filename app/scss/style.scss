@@ -1978,8 +1978,15 @@
 .category__search-title {
    font-size: 26px;
    color: #f3f3f8;
-   font-weight: 400;
+   font-weight: 500;
    margin-bottom: 30px;
+   span {
+      display: block;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 15px auto 0;
+      text-align: center;
+   }
 }
 .form--category {
    margin: 0 auto 30px;
@@ -3130,6 +3137,105 @@
    &.pricing__item-btn {
       background-color: #feb71d;
    }
+}
+
+/*888888888888888888888888888888888888888888888888888888888888*/
+/*888888888888888888888888888888888888888888888888888888888888*/
+/*888888888888888888888888888888888888888888888888888888888888*/
+/*How It Works*/
+.page-howitworks {
+   .category__search-inner {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+   }
+   .breadcrumbs.favorites {
+      margin-bottom: 0;
+   }
+   .category__search-title {
+      margin-bottom: 60px;
+   }
+}
+.howitworks {
+}
+.howitworks__inner {
+   background-color: #fff;
+   padding: 100px 0;
+}
+.howitworks__inner--grey {
+   background-color: #eff1f5;
+}
+.howitworks__item {
+   display: flex;
+   justify-content: space-between;
+}
+.howitworks__item--reverse {
+   flex-direction: row-reverse;
+}
+.howitworks__item-image {
+   min-width: 458px;
+   min-height: 352px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.howitworks__item-text {
+   max-width: 460px;
+}
+.howitworks__item-text__title {
+   font-size: 30px;
+   color: #000;
+   margin: 30px 0;
+}
+.howitworks__item-text__text {
+   font-size: 16px;
+   color: #555555;
+   line-height: 30px;
+   margin-bottom: 20px;
+}
+.howitworks__item-text__btn {
+   color: $blue;
+   background-color: #fff;
+   box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.1);
+   font-size: 16px;
+   border: none;
+   border-radius: 25px;
+   text-align: center;
+   padding: 17px 30px;
+   &:hover {
+      background-color: $blue;
+      color: #fff;
+      transition: all .3s;
+   }
+}
+
+/*888888888888888888888888888888888888888888888888888888888888*/
+/*888888888888888888888888888888888888888888888888888888888888*/
+/*888888888888888888888888888888888888888888888888888888888888*/
+/*404*/
+.page-404 {
+   padding: 80px 0 100px;
+   text-align: center;
+}
+.page-404__image {
+   max-width: auto;
+   height: auto;
+}
+.page-404__title {
+   color: #000;
+   font-size: 30px;
+   margin-top: 45px;
+   margin-bottom: 40px;
+}
+.page-404__btn {
+   color: #fff;
+   background-color: $blue;
+   border-radius: 25px;
+   border: none;
+   cursor: pointer;
+   padding: 20px;
+   width: 190px;
 }
 
 /*888888888888888888888888888888888888888888888888888888888888*/
