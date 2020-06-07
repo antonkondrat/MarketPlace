@@ -11,28 +11,54 @@ $(function () {
       autoplay: {
          delay: 3000,
       },
+      responsive: [
+         {
+           breakpoint: 680,
+           settings: {
+            arrows: false
+           }
+         },
+       ]
    });
    $(".followers__slider-inner").slick({
       nextArrow: '<i class="lnr-chevron-right"></i>',
       prevArrow: '<i class="lnr-chevron-left"></i>',
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: {
-         delay: 3000,
-      },
+      // autoplay: {
+      //    delay: 3000,
+      // },
+      responsive: [
+         {
+           breakpoint: 1050,
+           settings: {
+            slidesToShow: 2
+           }
+         },
+         {
+            breakpoint: 730,
+            settings: {
+               slidesToShow: 1
+            }
+          }
+       ]
    });
    var mySwiper = new Swiper(".feedback__container-swiper", {
       containerModifierClass: "feedback__container-swiper",
       slideClass: "feedback__item",
       wrapperClass: "feedback__inner-items",
       loop: true,
-      slidesPerView: 2,
-      slidesToScroll: 2,
       spaceBetween: 30,
       navigation: {
          nextEl: ".feedback__button-next",
          prevEl: ".feedback__button-prev",
       },
+      breakpoint: {
+         1230: {
+           slidesPerView: 1,
+           slidesToScroll: 1,
+         }
+       }
    });
    //Slider//
    //RateYo//
